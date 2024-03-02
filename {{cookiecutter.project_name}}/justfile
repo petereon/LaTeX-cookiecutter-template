@@ -1,0 +1,7 @@
+watch target:
+    {% raw %}
+    watchexec -e tex -c -r "just {{target}}"
+    {% endraw %}
+
+render:
+    xelatex --jobname {{cookiecutter.project_name}} -output-directory=build main.tex

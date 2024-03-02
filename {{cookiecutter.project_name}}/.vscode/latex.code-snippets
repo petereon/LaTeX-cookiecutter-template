@@ -1,0 +1,56 @@
+{
+  "section": {
+    "prefix": "section",
+    "body": ["\\section{$1}"],
+    "description": "section",
+    "scope": "latex"
+  },
+  "subsection": {
+    "prefix": "subsection",
+    "body": ["\\subsection{$1}"],
+    "description": "subsection",
+    "scope": "latex"
+  },
+  "cite": {
+    "prefix": "cite",
+    "body": ["\\cite{$1}"],
+    "description": "cite",
+    "scope": "latex"
+  },
+  "begin": {
+    "prefix": "begin",
+    "body": ["\\begin{$1}", "", "\\end{$1}"],
+    "description": "begin",
+    "scope": "latex"
+  },
+  "math": {
+    "prefix": "math",
+    "body": ["$$1$"],
+    "description": "math",
+    "scope": "latex"
+  },
+  "textit": {
+    "prefix": ["textit", "it"],
+    "body": ["\\textit{$1}"],
+    "description": "textit",
+    "scope": "latex"
+  },
+  "textbf": {
+    "prefix": ["textbf", "bf"],
+    "body": ["\\textbf{$1}"],
+    "description": "textbf",
+    "scope": "latex"
+  },
+  "figure": {
+    "prefix": "figure",
+    "body": [
+      "\\begin{figure}[h]",
+      "\\centering",
+      "\\includegraphics[width=300pt]{$1}",
+      "\\caption{$2}",
+      "\\end{figure}"
+    ],
+    "description": "figure",
+    "scope": "latex"
+  }
+}
