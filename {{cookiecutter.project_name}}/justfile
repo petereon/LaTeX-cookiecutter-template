@@ -4,4 +4,5 @@ watch target:
     {% endraw %}
 
 render:
+    mkdir -p build
     xelatex --jobname {{cookiecutter.project_name}} -output-directory=build main.tex
