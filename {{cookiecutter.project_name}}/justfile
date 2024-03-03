@@ -1,7 +1,5 @@
 watch target:
-    {% raw %}
-    watchexec -e tex -c -r "just {{target}}"
-    {% endraw %}
+    {% raw %}watchexec -e tex -c -r "just {{target}}"{% endraw %}
 
 render:
     mkdir -p build
