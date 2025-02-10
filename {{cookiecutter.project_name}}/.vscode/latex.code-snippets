@@ -52,5 +52,45 @@
     ],
     "description": "figure",
     "scope": "latex"
-  }
+  },
+  "newline": {
+    "prefix": "newline",
+    "body": ["\\newline"],
+    "description": "newline",
+    "scope": "latex"
+  },
+  "newpage": {
+    "prefix": "newpage",
+    "body": ["\\newpage"],
+    "description": "newpage",
+    "scope": "latex"
+  },
+  "itemize": {
+    "prefix": "itemize",
+    "body": ["\\begin{itemize}", "\\item $1", "\\end{itemize}"],
+    "description": "itemize",
+    "scope": "latex"
+  },
+  "item": {
+    "prefix": "item",
+    "body": ["\\item $1"],
+    "description": "item",
+    "scope": "latex"
+  },
+  "table": {
+    "prefix": "table",
+    "body": [
+      "\\begin{table}[h]",
+      "\\centering",
+      "\\begin{tabular}{$1}",
+      "\\toprule",
+      "$2",
+      "\\bottomrule",
+      "\\end{tabular}",
+      "\\caption{$3}",
+      "\\end{table}"
+    ],
+    "description": "table",
+    "scope": "latex"
+  },
 }
